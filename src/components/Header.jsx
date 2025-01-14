@@ -22,7 +22,7 @@ function Header() {
                 <li className='text-2xl font-medium text-white'>
                     <Link to={'/creatarticle'}>Creat Article</Link>
                 </li>
-                <button className='px-3 py-2 bg-red-500 text-white rounded-md w-[150px] font-medium' onClick={handleLogout}>Logout</button>
+                <button className='px-3 py-2 bg-red-500 text-white rounded-md w-[150px] font-medium' onClick={handleLogout}>Logout➡️</button>
             </ul>
         </nav>
       </header>
@@ -31,3 +31,4 @@ function Header() {
 }
 
 export default Header
+

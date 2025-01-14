@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
-// import ArticleDetail from "./pages/ArticleDetail";
 import CreatArticle from "./pages/CreateArticle";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -21,10 +20,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        {/* <Route
-          path="/articledetails/:id"
-          element={<ProtectedRoute><ArticleDetail></ArticleDetail></ProtectedRoute>}
-        ></Route> */}
+        
         <Route
           path="/creatarticle"
           element={<CreatArticle></CreatArticle>}

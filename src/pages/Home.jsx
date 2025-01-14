@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-// import circlePlus from '../assets/circlePlus.svg';
 import { useNavigate } from "react-router-dom";
-
 function Home() {
   const [articles, setArticles] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -45,10 +43,6 @@ function Home() {
     navigate('/creatarticle');
   }
 
-  function handleCardClick(article) {
-    navigate(`/articledetails/${article.id}`, { state: article });
-  }
-
   return (
     <div>
       <Header></Header>
@@ -59,7 +53,7 @@ function Home() {
               <div
                 key={index}
                 className="w-[400px] cursor-pointer p-5 bg-gray-200 rounded-md"
-                onClick={() => handleCardClick(article)} 
+                // onClick={() => handleCardClick(article)} 
               >
                 <h1 className="text-xl">Id: {article.id}</h1>
                 <h1 className="text-3xl font-bold">Title: {article.title}</h1>
@@ -73,6 +67,8 @@ function Home() {
                   >
                     Edit
                   </button>
+                
+                
                 </div>
               </div>
             ))
