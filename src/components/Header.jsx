@@ -20,7 +20,7 @@ function Header() {
                     <Link to={'/'}>Home</Link>
                 </li>
                 <li className='text-2xl font-medium text-white'>
-                    <Link to={'/creatarticle'}>Creat Article</Link>
+                    <Link to={'/createarticle'}>Creat Article</Link>
                 </li>
                 <button className='px-3 py-2 bg-red-500 text-white rounded-md w-[150px] font-medium' onClick={handleLogout}>Logout➡️</button>
             </ul>
