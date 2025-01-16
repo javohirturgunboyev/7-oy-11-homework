@@ -36,18 +36,18 @@ function Login() {
 
   return (
     <div>
-      <form className='flex flex-col border w-[450px] rounded-md mx-auto mt-[100px] p-5 bg-yellow-300'>
-        <h1 className='text-4xl mb-5 text-white text-center'>Login Forma</h1>
+      <form className='flex flex-col border w-[650px] rounded-md mx-auto mt-[100px] p-5 bg-gray-500'>
+        <h1 className='text-4xl mb-5 text-white text-center'>Login Sahifasi</h1>
         <input
           type="text"
-          className='w-[400px] border bg-gray-300 p-3 rounded-md mb-2 text-white text-xl'
+          className='w-[500px] mx-auto border bg-gray-300 p-3 rounded-md mb-10 mt-10 text-white text-xl '
           placeholder='Enter username'
           value={username}
           onChange={(e) => { setUsername(e.target.value) }}
         />
         <input
           type="password"
-          className='w-[400px] border bg-gray-300 p-3 rounded-md mb-2 text-white text-xl'
+          className='w-[500px] mx-auto border bg-gray-300 p-3 rounded-md mb-10 text-white text-xl'
           placeholder='Enter password'
           value={password}
           onChange={(e) => { setPassword(e.target.value) }}
@@ -55,17 +55,17 @@ function Login() {
         <button
           type='submit'
           onClick={handleClick}
-          className='w-[400px] p-3 bg-green-400 rounded-md text-white text-xl'
+          className='w-[500px] mx-auto p-3 bg-white rounded-md mb-10 text-black text-xl'
         >
-          Login
+          Login qilib utish
         </button>
-        <button
+        <p
           type='submit'
           onClick={handleRegister}
-          className='w-[400px] p-3 bg-green-400 rounded-md mt-5 text-white text-xl'
+          className='text-white text-2xl mx-auto mb-10 cursor-pointer'
         >
-          Register
-        </button>
+          Register sahifasiga utish uchun bosing
+        </p>
       </form>
     </div>
   );

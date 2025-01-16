@@ -15,10 +15,8 @@ function Header() {
             <h1 className='font-semibold text-3xl text-gray-200'>Mening sahifam</h1>
         </div>
         <nav>
-            <ul className='flex gap-72 flex-row '>
-                <li className='text-2xl font-medium text-white'>
-                    <Link to={'/'}>Home</Link>
-                </li>
+            <ul className='flex gap-[500px] flex-row '>
+                
                 <li className='text-2xl font-medium text-white'>
                     <Link to={'/createarticle'}>Creat Article</Link>
                 </li>
